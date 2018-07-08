@@ -1,0 +1,14 @@
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+RewriteEngine On
+RewriteRule ^dir/(.+)\.php pages/c.php
+RewriteRule ^dir/(.+)\.php pages/portfolio.php
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Options -Indexes
+ErrorDocument 404 /pages/errors/notfound.html
+ErrorDocument 403 /pages/errors/forbidden.html

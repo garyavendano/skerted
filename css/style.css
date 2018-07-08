@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'danielblack';
+    src: url('../fonts/daniel-black-webfont.woff2') format('woff2'),
+         url('../fonts/daniel-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.uk-daniel {
+    font-family: "danielblack", sans-serif;
+    font-size: 41px;
+}
